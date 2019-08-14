@@ -1,20 +1,68 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+           <form>
+               <div class="row form-group justify-content-center">
+                   <div class="col-4">
+                       <label for="name">Name</label>
+                   </div>
+                   <div class="col-4">
+                       <input type="text" appIsValid class="form-control" id="name" placeholder="Enter name" required = true>
+                       <div class="invalid-feedback">
+                              Please provide Name!
+                      </div>
+                   </div>
+               </div>
+               <div class="row form-group justify-content-center">
+                      <div class="col-4">
+                          <label for="age">Age</label>
+                      </div>
+                      <div class="col-4">
+                          <input appIsValid type="number" class="form-control" id="age" placeholder="Enter age" required>
+                          <div class="invalid-feedback">
+                                  Please provide valid age!
+                          </div>
+                      </div>
+               </div>
+              <div class="row form-group justify-content-center">
+                  <div class="col-4">
+                      <label for="dob">Date of Birth</label>
+                  </div>
+                  <div class="col-4">
+                      <input appIsValid type="date" class="form-control" id="dob" placeholder="Enter dob" required>
+                      <div class="invalid-feedback">
+                              Please provide date!
+                      </div>
+                  </div>
+              </div>
+              <div class="row form-group justify-content-center">
+                  <div class="col-4">
+                      <label for="occupation">Occupation</label>
+                  </div>
+                  <div class="col-4">
+                      <select id="occupation" class="form-control" appIsValid required>
+                          <option value="" selected>--Choose -- </option>
+                          <option value="Light Manual">Cleaner</option>
+                          <option>Doctor</option>
+                          <option>Author</option>
+                          <option>Farmer</option>
+                          <option>Mechanic</option>
+                          <option>Florist</option>
+                      </select>
+                      <div class="invalid-feedback">
+                              Please choose valid option!
+                      </div>
+                  </div>
+              </div>
+              <div class="row form-group justify-content-center">
+                  <div class="col-4">
+                      <label for="deathSumInsured">Death Sum Insured</label>
+                  </div>
+                  <div class="col-4">
+                      <input type="text" class="form-control" id="name" placeholder="Sum Insured"  required readonly>
+                  </div>
+              </div>
+          </form> 
+      </div>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
